@@ -57,7 +57,7 @@ public class HTMLer {
                     "</head>\n" +
                     "<body>");
             bufferedWriter.write("<table>\n");
-            bufferedWriter.write("<tr><td>Id</td><td>Id на сайте</td><td>Имя</td><td>ЕГЭ/БВИ</td><td>Заявление на согласие</td><td>Шансы подать оригинал</td></tr>\n");
+            bufferedWriter.write("<th><td>На сайте</td><td>Имя абитуриента</td><td>Балл</td><td>Согласие</td><td>Шанс</td></th>\n");
             for (int it = 0; it < toWrite.size(); it++) {
                 Student student = toWrite.get(it);
                 bufferedWriter.write("\t" + student.toHTMLString(it));

@@ -32,7 +32,13 @@ public class Student implements Comparable<Student> {
     }
 
     public String toHTMLString(int number) {
-        return String.format("\t<tr><td>%d</td><td>%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n",
+        String color = "enroll-no";
+        if (comment >= 30) color = "enroll-maybe";
+        if (comment >= 90) color = "enroll-likely";
+        if (comment >= 100) color = "enroll-ok";
+
+        return String.format("\t<tr%s><td>%d</td><td>%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n",
+                " class=\"" + color + "\"",
                 number,
                 this.number,
                 name,

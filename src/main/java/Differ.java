@@ -79,6 +79,7 @@ public class Differ {
             logger.info("Previous file doesn't exists");
         }
         boolean isCurrentQuota = false;
+        boolean isCurrentBan = false;
         ArrayList<Student> studentsToWrite = new ArrayList<>();
         Elements htmlStudents = current.getElementsByTag("tr");
         for (Element element : htmlStudents) {
@@ -88,7 +89,11 @@ public class Differ {
             if (!element.getElementsByTag("td").get(0).attributes().isEmpty()) {
                 isCurrentQuota = element.getElementsByTag("td").get(0).ownText().equals("на бюджетное место в пределах особой квоты") ||
                         element.getElementsByTag("td").get(0).ownText().equals("на бюджетное место в пределах целевой квоты");
+                isCurrentBan = element.getElementsByTag("td").get(0).ownText().equals("на контрактной основе");
                 element.getElementsByTag("td").get(0).remove();
+            }
+            if (isCurrentBan) {
+                continue;
             }
             Elements elements = element.getElementsByTag("td");
             Student student = new Student(new String[]{
