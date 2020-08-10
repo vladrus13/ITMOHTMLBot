@@ -5,18 +5,16 @@ import org.jsoup.select.Elements;
 
 import java.io.*;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.logging.Level;
-import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public class Differ {
 
     public static final Logger logger = Logger.getLogger(Differ.class.getName());
+    public static final Properties properties = new Properties();
 
     /**
      * FILE we parse
@@ -36,21 +34,8 @@ public class Differ {
      * @param args ignored
      */
     public static void main(String[] args) {
-        try {
-            LogManager.getLogManager().readConfiguration(new FileInputStream("resources/logging.properties"));
-        } catch (IOException exception) {
-            exception.printStackTrace();
-            return;
-        }
-        if (args.length != 0) {
-            logger.info("Choose input-file");
-            if (args.length != 1) {
-                logger.severe("Usage: Launcher <current-file.html>");
-            }
-            CURRENT = args[0];
-        } else {
-            logger.info("Choose standard files");
-        }
+        if (HTMLer.readyToWork(properties, logger)) return;
+        CURRENT = properties.getProperty("html_name");
         Element current;
         try {
             current = getTable(CURRENT);
@@ -63,9 +48,10 @@ public class Differ {
             return;
         }
         Map<String, Student> students = new HashMap<>();
-        if (Files.exists(Paths.get("resources/previous.txt"))) {
+        Path previousPath = Paths.get(properties.getProperty("path_to_git")).resolve(properties.getProperty("name") + ".txt");
+        if (Files.exists(previousPath)) {
             logger.info("Previous file exists");
-            try (BufferedReader bufferedReader = Files.newBufferedReader(Paths.get("resources/previous.txt"))) {
+            try (BufferedReader bufferedReader = Files.newBufferedReader(previousPath)) {
                 String reader;
                 while ((reader = bufferedReader.readLine()) != null) {
                     Student student = new Student(reader.split("#"));
@@ -110,15 +96,6 @@ public class Differ {
                 student.setComment(students.get(element.getElementsByTag("td").get(2).html()).getComment());
             }
         }
-        try (BufferedWriter bufferedWriter = Files.newBufferedWriter(Paths.get("resources/previous.txt"))) {
-            for (Student student : studentsToWrite) {
-                if (student.getComment() == -1) {
-                    logger.warning("Student: " + student.toString().replace("#", " ") + ": no comment.");
-                }
-                bufferedWriter.write(String.format("%s\n", student.toString()));
-            }
-        } catch (IOException e) {
-            logger.severe(Arrays.toString(e.getStackTrace()));
-        }
+        Merger.writeToPrevious(previousPath, studentsToWrite, logger);
     }
 }

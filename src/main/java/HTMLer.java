@@ -1,28 +1,23 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
+import java.util.Properties;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public class HTMLer {
     public static final Logger logger = Logger.getLogger(HTMLer.class.getName());
+    public static final Properties properties = new Properties();
 
     public static void main(String[] args) {
-        try {
-            LogManager.getLogManager().readConfiguration(new FileInputStream("resources/logging.properties"));
-        } catch (IOException exception) {
-            exception.printStackTrace();
-            return;
-        }
+        if (readyToWork(properties, logger)) return;
+        Path previousPath = Paths.get(properties.getProperty("path_to_git")).resolve(properties.getProperty("name") + ".txt");
         ArrayList<Student> students = new ArrayList<>();
-        if (Files.exists(Paths.get("resources/previous.txt"))) {
-            try (BufferedReader bufferedReader = Files.newBufferedReader(Paths.get("resources/previous.txt"))) {
+        if (Files.exists(previousPath)) {
+            try (BufferedReader bufferedReader = Files.newBufferedReader(previousPath)) {
                 String reader;
                 while ((reader = bufferedReader.readLine()) != null) {
                     Student student = new Student(reader.split("#"));
@@ -61,7 +56,7 @@ public class HTMLer {
                     "</head>\n" +
                     "<body>\n");
             bufferedWriter.write("<table>\n");
-            bufferedWriter.write("<tr><th>№</th><th>На сайте</th><th>Имя абитуриента</th><th>Балл</th><th>Согласие</th><th>Шанс</th></tr>\n");
+            bufferedWriter.write("<tr><th>№</th><th>На сайте</th><th>Имя абитуриента</th><th>Балл</th><th>Согласие</th><th>Шанс подачи</th></tr>\n");
             int it = 1;
             for (Student student : toWrite) {
                 if (student.getComment() == -1) {
@@ -74,5 +69,21 @@ public class HTMLer {
         } catch (IOException e) {
             logger.severe(Arrays.toString(e.getStackTrace()));
         }
+    }
+
+    static boolean readyToWork(Properties properties, Logger logger) {
+        try {
+            LogManager.getLogManager().readConfiguration(new FileInputStream("resources/logging.properties"));
+        } catch (IOException exception) {
+            exception.printStackTrace();
+            return true;
+        }
+        try {
+            properties.load(new FileReader("resources/paths.properties"));
+        } catch (IOException e) {
+            logger.severe(Arrays.toString(e.getStackTrace()));
+            return true;
+        }
+        return false;
     }
 }
