@@ -8,11 +8,27 @@ import java.util.Properties;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
+/**
+ * HTMLer. Convert your .txt file to index.html. BE CAREFUL!
+ */
 public class HTMLer {
+    /**
+     * Logger
+     */
     public static final Logger logger = Logger.getLogger(HTMLer.class.getName());
+    /**
+     * Properties
+     */
     public static final Properties properties = new Properties();
 
+    /**
+     * Main-class for HTMLer
+     * @param args ignored
+     */
     public static void main(String[] args) {
+        /*
+        Ready to work. Just ready properties and logger
+         */
         if (readyToWork(properties, logger)) return;
         Path previousPath = Paths.get(properties.getProperty("path_to_git")).resolve(properties.getProperty("name") + ".txt");
         ArrayList<Student> students = new ArrayList<>();
@@ -71,6 +87,12 @@ public class HTMLer {
         }
     }
 
+    /**
+     * Ready to work. Just load Logger and Properties
+     * @param properties properties
+     * @param logger logger
+     * @return if we should exit from program
+     */
     static boolean readyToWork(Properties properties, Logger logger) {
         try {
             LogManager.getLogManager().readConfiguration(new FileInputStream("resources/logging.properties"));

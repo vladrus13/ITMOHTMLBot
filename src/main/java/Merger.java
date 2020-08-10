@@ -8,10 +8,23 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.logging.Logger;
 
+/**
+ * Merge your .txt and other .txt in git_rep
+ */
 public class Merger {
+    /**
+     * Logger
+     */
     public static final Logger logger = Logger.getLogger(HTMLer.class.getName());
+    /**
+     * Properties
+     */
     public static final Properties properties = new Properties();
 
+    /**
+     * Main-method for Merger
+     * @param args ignored
+     */
     public static void main(String[] args) {
         if (HTMLer.readyToWork(properties, logger)) return;
         File git = new File(properties.getProperty("path_to_git"));
@@ -33,6 +46,7 @@ public class Merger {
                                 students.get(student.getName()).setComment(student.getComment());
                             } else {
                                 if (student.getComment() != -1 && students.get(student.getName()).getComment() != student.getComment()) {
+                                    // if we found different comments on one student
                                     logger.severe("Conflict on student: " + student.toString().replace('#', ' '));
                                 }
                             }
@@ -58,6 +72,12 @@ public class Merger {
         writeToPrevious(previousPath, toWrite, logger);
     }
 
+    /**
+     * Write to file students on .txt format
+     * @param previousPath where we write
+     * @param toWrite what we write
+     * @param logger logger
+     */
     static void writeToPrevious(Path previousPath, ArrayList<Student> toWrite, Logger logger) {
         try (BufferedWriter bufferedWriter = Files.newBufferedWriter(previousPath)) {
             for (Student student : toWrite) {
