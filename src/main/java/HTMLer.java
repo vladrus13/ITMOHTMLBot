@@ -6,11 +6,12 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public class HTMLer {
-    public static Logger logger = Logger.getLogger(HTMLer.class.getName());
+    public static final Logger logger = Logger.getLogger(HTMLer.class.getName());
 
     public static void main(String[] args) {
         try {
@@ -34,6 +35,18 @@ public class HTMLer {
         } else {
             logger.severe("Previous file doesn't exists");
         }
+        ArrayList<Student> toWrite = new ArrayList<>();
+        for (int i = 0; i < students.size(); i++) {
+            Student student = students.get(i);
+            if (student.isBVI() || student.isQuota()) {
+                toWrite.add(student);
+                // O(n)
+                students.remove(student);
+                i--;
+            }
+        }
+        students.sort(Student::compareTo);
+        toWrite.addAll(students);
         try (BufferedWriter bufferedWriter = Files.newBufferedWriter(Paths.get("resources/index.html"))) {
             bufferedWriter.write("<!DOCTYPE html>\n" +
                     "<html lang=\"en\">\n" +
@@ -44,9 +57,10 @@ public class HTMLer {
                     "</head>\n" +
                     "<body>");
             bufferedWriter.write("<table>\n");
-            bufferedWriter.write("<tr><td>Id</td><td>Имя</td><td>ЕГЭ/БВИ</td><td>Заявление на согласие</td><td>Шансы подать оригинал</td></tr>\n");
-            for (Student student : students) {
-                bufferedWriter.write("\t" + student.toHTMLString());
+            bufferedWriter.write("<tr><td>Id</td><td>Id на сайте</td><td>Имя</td><td>ЕГЭ/БВИ</td><td>Заявление на согласие</td><td>Шансы подать оригинал</td></tr>\n");
+            for (int it = 0; it < toWrite.size(); it++) {
+                Student student = toWrite.get(it);
+                bufferedWriter.write("\t" + student.toHTMLString(it));
             }
             bufferedWriter.write("</table>\n</body>\n");
         } catch (IOException e) {

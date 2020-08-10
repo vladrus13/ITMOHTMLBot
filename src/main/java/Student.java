@@ -1,4 +1,4 @@
-public class Student {
+public class Student implements Comparable<Student> {
     private final boolean quota;
     private int comment;
     private final int number;
@@ -31,9 +31,10 @@ public class Student {
         return comment + "#" + number + "#" + name + "#" + EGE + "#" + accept + "#" + quota + "#" + olympiad;
     }
 
-    public String toHTMLString() {
-        return String.format("\t<tr><td>%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n",
+    public String toHTMLString(int number) {
+        return String.format("\t<tr><td>%d</td><td>%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n",
                 number,
+                this.number,
                 name,
                 olympiad.isEmpty() ? (quota ? "Квота" : (EGE == 0 ? "" : EGE)) : "БВИ",
                 accept ? "Да" : "Нет",
@@ -66,5 +67,18 @@ public class Student {
 
     public String getOlympiad() {
         return olympiad;
+    }
+
+    public boolean isBVI() {
+        return !olympiad.equals("");
+    }
+
+    public boolean isQuota() {
+        return quota;
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        return o.EGE - this.EGE == 0 ? name.compareTo(o.name) : o.EGE - this.EGE;
     }
 }

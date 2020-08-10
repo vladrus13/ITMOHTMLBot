@@ -95,7 +95,7 @@ public class Differ {
                     "",
                     elements.get(0).ownText(),
                     elements.get(2).ownText(),
-                    elements.get(8).ownText(),
+                    elements.get(7).ownText(),
                     elements.get(10).ownText(),
                     String.valueOf(isCurrentQuota),
                     elements.get(12).ownText()
