@@ -47,7 +47,7 @@ public class Differ {
             if (args.length != 1) {
                 logger.severe("Usage: Launcher <current-file.html>");
             }
-            CURRENT = args[1];
+            CURRENT = args[0];
         } else {
             logger.info("Choose standard files");
         }
