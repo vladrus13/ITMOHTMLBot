@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'abiticons';
+    src:    url('abiticons/abiticons.eot?i9eso2');
+    src:    url('abiticons/abiticons.eot?i9eso2#iefix') format('embedded-opentype'),
+        url('abiticons/abiticons.ttf?i9eso2') format('truetype'),
+        url('abiticons/abiticons.woff?i9eso2') format('woff'),
+        url('abiticons/abiticons.svg?i9eso2#abiticons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="abiticons-"], [class*=" abiticons-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'abiticons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.abiticons-video:before {
+    -moz-transform: rotate(180deg); /* Для Firefox */
+    -ms-transform: rotate(180deg); /* Для IE */
+    -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(180deg); /* Для Opera */
+    transform: rotate(180deg);
+    content: "\e95f";
+    display: block;
+    margin-top: -3px;
+    margin-left: -1px;
+}
+.abiticons-sad:before {
+    content: "\e95e";
+}
+.abiticons-Group15:before {
+    content: "\e900";
+}
+.abiticons-fly:before {
+    content: "\e901";
+}
+.abiticons-mail:before {
+    content: "\e902";
+}
+.abiticons-edit:before {
+    content: "\e903";
+}
+.abiticons-page:before {
+    content: "\e904";
+}
+.abiticons-user:before {
+    content: "\e905";
+}
+.abiticons-users:before {
+    content: "\e906";
+}
+.abiticons-clip:before {
+    content: "\e907";
+}
+.abiticons-lock:before {
+    content: "\e908";
+}
+.abiticons-unlock:before {
+    content: "\e909";
+}
+.abiticons-dragdrop:before {
+    content: "\e90a";
+}
+.abiticons-burger:before {
+    content: "\e90b";
+}
+.abiticons-trash:before {
+    content: "\e90c";
+}
+.abiticons-ok:before {
+    content: "\e90d";
+}
+.abiticons-minus:before {
+    content: "\e90e";
+}
+.abiticons-close:before {
+    content: "\e90f";
+}
+.abiticons-plus:before {
+    content: "\e910";
+}
+.abiticons-info:before {
+    content: "\e911";
+}
+.abiticons-clock:before {
+    content: "\e912";
+}
+.abiticons-chart:before {
+    content: "\e913";
+}
+.abiticons-notification:before {
+    content: "\e914";
+}
+.abiticons-idea:before {
+    content: "\e915";
+}
+.abiticons-print:before {
+    content: "\e916";
+}
+.abiticons-settings:before {
+    content: "\e917";
+}
+.abiticons-photo:before {
+    content: "\e918";
+}
+.abiticons-selecticon:before {
+    content: "\e919";
+}
+.abiticons-usermenu:before {
+    content: "\e91a";
+}
+.abiticons-exitcabinet:before {
+    content: "\e91b";
+}
+.abiticons-cabinethead:before {
+    content: "\e91c";
+}
+.abiticons-feedback:before {
+    content: "\e91d";
+}
+.abiticons-searchhead:before {
+    content: "\e91e";
+}
+.abiticons-allcategories:before {
+    content: "\e91f";
+}
+.abiticons-slider-angle-right:before {
+    content: "\e920";
+}
+.abiticons-slider-angle-left:before {
+    content: "\e921";
+}
+.abiticons-Group18:before {
+    content: "\e922";
+}
+.abiticons-Group17:before {
+    content: "\e923";
+}
+.abiticons-phonehead:before {
+    content: "\e924";
+}
+.abiticons-metro:before {
+    content: "\e925";
+}
+.abiticons-times:before {
+    content: "\e926";
+}
+.abiticons-android:before {
+    content: "\e927";
+}
+.abiticons-apple:before {
+    content: "\e928";
+}
+.abiticons-facebook:before {
+    content: "\e929";
+}
+.abiticons-googleplus:before {
+    content: "\e92a";
+}
+.abiticons-instagram:before {
+    content: "\e92b";
+}
+.abiticons-twitter:before {
+    content: "\e92c";
+}
+.abiticons-vk:before {
+    content: "\e92d";
+}
+.abiticons-youtube:before {
+    content: "\e92e";
+}
+.abiticons-angle-o:before {
+    content: "\e92f";
+}
+.abiticons-mail-o:before {
+    content: "\e930";
+}
+.abiticons-search-o:before {
+    content: "\e931";
+}
+.abiticons-phone-o:before {
+    content: "\e932";
+}
+.abiticons-angle:before {
+    content: "\e933";
+}
+.abiticons-angle2:before {
+    content: "\e934";
+}
+.abiticons-Fill73:before {
+    content: "\e935";
+}
+.abiticons-Fill85:before {
+    content: "\e936";
+}
+.abiticons-Fill135:before {
+    content: "\e937";
+}
+.abiticons-Fill199:before {
+    content: "\e938";
+}
+.abiticons-Group26:before {
+    content: "\e939";
+}
+.abiticons-Group48:before {
+    content: "\e93a";
+}
+.abiticons-Handshake:before {
+    content: "\e93b";
+}
+.abiticons-Fill29:before {
+    content: "\e93c";
+}
+.abiticons-Fill80:before {
+    content: "\e93d";
+}
+.abiticons-Fill88:before {
+    content: "\e93e";
+}
+.abiticons-Fill93:before {
+    content: "\e93f";
+}
+.abiticons-Fill155:before {
+    content: "\e940";
+}
+.abiticons-Fill169:before {
+    content: "\e941";
+}
+.abiticons-Fill170:before {
+    content: "\e942";
+}
+.abiticons-Fill181:before {
+    content: "\e943";
+}
+.abiticons-Fill209:before {
+    content: "\e944";
+}
+.abiticons-Fill41:before {
+    content: "\e945";
+}
+.abiticons-Fill62:before {
+    content: "\e946";
+}
+.abiticons-Group19:before {
+    content: "\e947";
+}
+.abiticons-Purse:before {
+    content: "\e948";
+}
+.abiticons-Security:before {
+    content: "\e949";
+}
+.abiticons-rating:before {
+    content: "\e94a";
+}
+.abiticons-coins:before {
+    content: "\e94b";
+}
+.abiticons-calculator:before {
+    content: "\e94c";
+}
+.abiticons-arrows-down:before {
+    content: "\e94d";
+}
+.abiticons-arrows-up:before {
+    content: "\e94e";
+}
+.abiticons-lightning:before {
+    content: "\e94f";
+}
+.abiticons-bulb:before {
+    content: "\e950";
+}
+.abiticons-globe:before {
+    content: "\e951";
+}
+.abiticons-rouble:before {
+    content: "\e952";
+}
+.abiticons-question:before {
+    content: "\e953";
+}
+.abiticons-flask:before {
+    content: "\e954";
+}
+.abiticons-column:before {
+    content: "\e955";
+}
+.abiticons-building:before {
+    content: "\e956";
+}
+.abiticons-ball:before {
+    content: "\e957";
+}
+.abiticons-microscope:before {
+    content: "\e958";
+}
+.abiticons-graduate:before {
+    content: "\e959";
+}
+.abiticons-community:before {
+    content: "\e95a";
+}
+.abiticons-target:before {
+    content: "\e95b";
+}
+.abiticons-home:before {
+    content: "\e95c";
+}
+.abiticons-lamp:before {
+    content: "\e95d";
+}
+
