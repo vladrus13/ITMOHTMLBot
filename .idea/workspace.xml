@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ec99a5c-e4e1-41c9-a2b9-60002996291f" name="Default Changelist" comment="Add JavaDoc" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1fovgkCMJcj7k7feuZPWVKl9YMG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Merger">
+    <configuration name="Differ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Differ" />
+      <module name="ITMOHTMLBot" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HTMLer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HTMLer" />
+      <module name="ITMOHTMLBot" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Merger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Merger" />
+      <module name="ITMOHTMLBot" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Differ" />
+      <item itemvalue="Application.HTMLer" />
+      <item itemvalue="Application.Merger" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Merger" />
+        <item itemvalue="Application.HTMLer" />
+        <item itemvalue="Application.Differ" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ec99a5c-e4e1-41c9-a2b9-60002996291f" name="Default Changelist" comment="" />
+      <created>1596897380075</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596897380075</updated>
+      <workItem from="1596897381184" duration="1622000" />
+      <workItem from="1596899084962" duration="756000" />
+      <workItem from="1596977798644" duration="2169000" />
+      <workItem from="1597048716696" duration="1545000" />
+      <workItem from="1597050692404" duration="121000" />
+      <workItem from="1597051245442" duration="11269000" />
+      <workItem from="1597064924822" duration="813000" />
+      <workItem from="1597069443394" duration="6150000" />
+      <workItem from="1597084232925" duration="3991000" />
+      <workItem from="1597088773844" duration="224000" />
+    </task>
+    <task id="LOCAL-00001" summary="Fix input-files ver.">
+      <created>1597057732764</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597057732764</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add HTMLer">
+      <created>1597063893049</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597063893049</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add HTMLer">
+      <created>1597063925678</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597063925678</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add numbers">
+      <created>1597072164466</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597072164466</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add numbers">
+      <created>1597072223203</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597072223203</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fix contract and css">
+      <created>1597073048670</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597073048670</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add &quot;th&quot; in title">
+      <created>1597073483252</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597073483252</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add &quot;th&quot; in title">
+      <created>1597073510921</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597073510921</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Some add">
+      <created>1597073754939</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1597073754939</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Some adding">
+      <created>1597074940239</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1597074940239</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Some adding">
+      <created>1597075016462</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1597075016462</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add Merger">
+      <created>1597086983121</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1597086983121</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fix SEVERE">
+      <created>1597087091160</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1597087091160</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add JavaDoc">
+      <created>1597088217686</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1597088217686</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add gitignore">
+      <created>1597088830710</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1597088830710</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Fix input-files ver." />
+    <MESSAGE value="Add HTMLer" />
+    <MESSAGE value="Add numbers" />
+    <MESSAGE value="Fix contract and css" />
+    <MESSAGE value="Add &quot;th&quot; in title" />
+    <MESSAGE value="Some add" />
+    <MESSAGE value="Some adding" />
+    <MESSAGE value="Add Merger" />
+    <MESSAGE value="Fix SEVERE" />
+    <MESSAGE value="Add JavaDoc" />
+    <MESSAGE value="Add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gitignore" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="196" width="1082" height="884" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597086882867">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="418" y="196" width="1082" height="884" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1597086882867" />
+    <state x="768" y="272" width="374" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1597069778444">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="768" y="272" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1597069778443" />
+    <state x="692" y="371" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1597049644592">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="692" y="371" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1597049644592" />
+    <state x="798" y="541" width="637" height="511" key="#xdebugger.evaluate" timestamp="1597060441657">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="798" y="541" width="637" height="511" key="#xdebugger.evaluate/0.27.1920.1053@0.27.1920.1053" timestamp="1597060441657" />
+    <state x="711" y="410" width="488" height="324" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1597088183959">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="711" y="410" width="488" height="324" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1920.1053@0.27.1920.1053" timestamp="1597088183959" />
+    <state width="1874" height="336" key="GridCell.Tab.0.bottom" timestamp="1597088233094">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="336" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1597088233094" />
+    <state width="1874" height="336" key="GridCell.Tab.0.center" timestamp="1597088233091">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="336" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1597088233091" />
+    <state width="1874" height="336" key="GridCell.Tab.0.left" timestamp="1597088233088">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="336" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1597088233088" />
+    <state width="1874" height="336" key="GridCell.Tab.0.right" timestamp="1597088233092">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="336" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1597088233092" />
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom" timestamp="1597064098864">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1597064098864" />
+    <state width="1874" height="340" key="GridCell.Tab.1.center" timestamp="1597064098863">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1597064098863" />
+    <state width="1874" height="340" key="GridCell.Tab.1.left" timestamp="1597064098862">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1597064098862" />
+    <state width="1874" height="340" key="GridCell.Tab.1.right" timestamp="1597064098863">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1597064098863" />
+    <state x="493" y="211" width="924" height="691" key="Maven.ArtifactSearchDialog" timestamp="1596897758175">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="493" y="211" width="924" height="691" key="Maven.ArtifactSearchDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1596897758175" />
+    <state x="449" y="188" width="1024" height="852" key="SettingsEditor" timestamp="1596981480330">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="449" y="188" width="1024" height="852" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1596981480330" />
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597088836267">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1597088836267" />
+    <state x="693" y="314" width="524" height="485" key="extract.method.dialog" timestamp="1597086800186">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="693" y="314" width="524" height="485" key="extract.method.dialog/0.27.1920.1053@0.27.1920.1053" timestamp="1597086800186" />
+    <state x="624" y="252" key="run.anything.popup" timestamp="1597054357662">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="624" y="252" key="run.anything.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1597054357662" />
+  </component>
+</project>
