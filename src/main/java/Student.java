@@ -32,7 +32,8 @@ public class Student implements Comparable<Student> {
     }
 
     public String toHTMLString(int number) {
-        String color = "enroll-no";
+        String color = "enroll-unknown";
+        if (comment >= 0) color = "enroll-no";
         if (comment >= 30) color = "enroll-maybe";
         if (comment >= 90) color = "enroll-likely";
         if (comment == 100) color = "enroll-ok";

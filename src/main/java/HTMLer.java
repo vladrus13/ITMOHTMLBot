@@ -51,15 +51,22 @@ public class HTMLer {
             bufferedWriter.write("<!DOCTYPE html>\n" +
                     "<html lang=\"en\">\n" +
                     "<head>\n" +
-                    "    <meta charset=\"UTF-8\">\n" +
-                    "    <title>Приемная кампания КТ-2020</title>\n" +
-                    "    <link rel=\"stylesheet\" type=\"text/css\" href=\"css/style.css\">\n" +
+                    "\t<meta charset=\"UTF-8\">\n" +
+                    "\t<title>Приемная кампания КТ 2020</title>\n" +
+                    "\t<link rel=\"stylesheet\" type=\"text/css\" href=\"css/style.css\">\n" +
+                    "\t<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n" +
+                    "\t<link rel=\"shortcut icon\" sizes=\"16x16 32x32 64x64\" href=\"meta/favicon.ico\" />\n" +
+                    "\t<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"meta/apple-touch-icon.png\" />\n" +
+                    "\t<link rel=\"manifest\" href=\"meta/site.webmanifest\" />" +
                     "</head>\n" +
-                    "<body>");
+                    "<body>\n");
             bufferedWriter.write("<table>\n");
             bufferedWriter.write("<tr><th>№</th><th>На сайте</th><th>Имя абитуриента</th><th>Балл</th><th>Согласие</th><th>Шанс</th></tr>\n");
             int it = 1;
             for (Student student : toWrite) {
+                if (student.getComment() == -1) {
+                    logger.warning("Student: " + student.toString().replace("#", " ") + ": no comment.");
+                }
                 bufferedWriter.write("\t" + student.toHTMLString(it));
                 if (student.getComment() >= 90) it++;
             }
