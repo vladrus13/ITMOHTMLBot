@@ -32,7 +32,7 @@ public class Merger {
                             if (students.get(student.getName()).getComment() == -1) {
                                 students.get(student.getName()).setComment(student.getComment());
                             } else {
-                                if (student.getComment() != -1) {
+                                if (student.getComment() != -1 && students.get(student.getName()).getComment() != student.getComment()) {
                                     logger.severe("Conflict on student: " + student.toString().replace('#', ' '));
                                 }
                             }
