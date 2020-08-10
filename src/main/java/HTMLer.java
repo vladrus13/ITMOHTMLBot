@@ -58,9 +58,10 @@ public class HTMLer {
                     "<body>");
             bufferedWriter.write("<table>\n");
             bufferedWriter.write("<tr><th>№</th><th>На сайте</th><th>Имя абитуриента</th><th>Балл</th><th>Согласие</th><th>Шанс</th></tr>\n");
-            for (int it = 0; it < toWrite.size(); it++) {
-                Student student = toWrite.get(it);
+            int it = 1;
+            for (Student student : toWrite) {
                 bufferedWriter.write("\t" + student.toHTMLString(it));
+                if (student.getComment() >= 90) it++;
             }
             bufferedWriter.write("</table>\n</body>\n");
         } catch (IOException e) {
