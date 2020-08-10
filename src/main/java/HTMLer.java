@@ -52,12 +52,12 @@ public class HTMLer {
                     "<html lang=\"en\">\n" +
                     "<head>\n" +
                     "    <meta charset=\"UTF-8\">\n" +
-                    "    <title>ITMO</title>\n" +
+                    "    <title>Приемная кампания КТ-2020</title>\n" +
                     "    <link rel=\"stylesheet\" type=\"text/css\" href=\"css/style.css\">\n" +
                     "</head>\n" +
                     "<body>");
             bufferedWriter.write("<table>\n");
-            bufferedWriter.write("<th><td>На сайте</td><td>Имя абитуриента</td><td>Балл</td><td>Согласие</td><td>Шанс</td></th>\n");
+            bufferedWriter.write("<tr><th>№</th><th>На сайте</th><th>Имя абитуриента</th><th>Балл</th><th>Согласие</th><th>Шанс</th></th>\n");
             for (int it = 0; it < toWrite.size(); it++) {
                 Student student = toWrite.get(it);
                 bufferedWriter.write("\t" + student.toHTMLString(it));
