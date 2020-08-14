@@ -22,7 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ec99a5c-e4e1-41c9-a2b9-60002996291f" name="Default Changelist" comment="Add JavaDoc" />
+    <list default="true" id="8ec99a5c-e4e1-41c9-a2b9-60002996291f" name="Default Changelist" comment="Add JavaDoc">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Student.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,15 +108,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,7 +149,9 @@
       <workItem from="1597064924822" duration="813000" />
       <workItem from="1597069443394" duration="6150000" />
       <workItem from="1597084232925" duration="3991000" />
-      <workItem from="1597088773844" duration="224000" />
+      <workItem from="1597088773844" duration="334000" />
+      <workItem from="1597244997012" duration="115000" />
+      <workItem from="1597399172641" duration="360000" />
     </task>
     <task id="LOCAL-00001" summary="Fix input-files ver.">
       <created>1597057732764</created>
@@ -307,22 +312,26 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="711" y="410" width="488" height="324" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1920.1053@0.27.1920.1053" timestamp="1597088183959" />
-    <state width="1874" height="336" key="GridCell.Tab.0.bottom" timestamp="1597088233094">
+    <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1597245103572">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="336" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1597088233094" />
-    <state width="1874" height="336" key="GridCell.Tab.0.center" timestamp="1597088233091">
+    <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1597245103572" />
+    <state width="1874" height="336" key="GridCell.Tab.0.bottom" timestamp="1597089109096">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="336" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1597088233091" />
-    <state width="1874" height="336" key="GridCell.Tab.0.left" timestamp="1597088233088">
+    <state width="1874" height="336" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1597089109096" />
+    <state width="1874" height="336" key="GridCell.Tab.0.center" timestamp="1597089109096">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="336" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1597088233088" />
-    <state width="1874" height="336" key="GridCell.Tab.0.right" timestamp="1597088233092">
+    <state width="1874" height="336" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1597089109096" />
+    <state width="1874" height="336" key="GridCell.Tab.0.left" timestamp="1597089109096">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="336" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1597088233092" />
+    <state width="1874" height="336" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1597089109096" />
+    <state width="1874" height="336" key="GridCell.Tab.0.right" timestamp="1597089109096">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="336" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1597089109096" />
     <state width="1874" height="340" key="GridCell.Tab.1.bottom" timestamp="1597064098864">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

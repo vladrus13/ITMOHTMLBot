@@ -91,7 +91,7 @@ public class Student implements Comparable<Student> {
                 name,
                 olympiad.isEmpty() ? (quota ? "Квота" : (EGE == 0 ? "" : EGE)) : "БВИ",
                 accept ? "Да" : "Нет",
-                comment == -1 ? "" : comment + "%");
+                comment == -1 ? "" : comment == -2 ? "Нет комментария" : comment + "%");
     }
 
     /**
