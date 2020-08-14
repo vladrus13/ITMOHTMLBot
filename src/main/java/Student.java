@@ -81,7 +81,7 @@ public class Student implements Comparable<Student> {
         String color = "enroll-unknown";
         if (comment >= 0) color = "enroll-no";
         if (comment >= 30) color = "enroll-maybe";
-        if (comment >= 90) color = "enroll-likely";
+        if (comment >= 80) color = "enroll-likely";
         if (comment == 100) color = "enroll-ok";
         if (comment >= 90 && number > 120) color = "enroll-low";
         return String.format("\t<tr%s><td>%s</td><td>%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n",
