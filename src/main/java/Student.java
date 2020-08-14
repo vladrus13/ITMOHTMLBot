@@ -86,7 +86,7 @@ public class Student implements Comparable<Student> {
         if (comment >= 90 && number > 120) color = "enroll-low";
         return String.format("\t<tr%s><td>%s</td><td>%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n",
                 " class=\"" + color + "\"",
-                comment >= 90 ? number : "",
+                comment >= 80 ? number : "",
                 this.number,
                 name,
                 olympiad.isEmpty() ? (quota ? "Квота" : (EGE == 0 ? "" : EGE)) : "БВИ",

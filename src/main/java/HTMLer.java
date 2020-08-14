@@ -79,7 +79,7 @@ public class HTMLer {
                     logger.warning("Student: " + student.toString().replace("#", " ") + ": no comment.");
                 }
                 bufferedWriter.write("\t" + student.toHTMLString(it));
-                if (student.getComment() >= 90) it++;
+                if (student.getComment() >= 80) it++;
             }
             bufferedWriter.write("</table>\n</body>\n");
         } catch (IOException e) {
