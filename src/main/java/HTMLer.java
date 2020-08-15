@@ -49,7 +49,16 @@ public class HTMLer {
         ArrayList<Student> toWrite = new ArrayList<>();
         for (int i = 0; i < students.size(); i++) {
             Student student = students.get(i);
-            if (student.isBVI() || student.isQuota()) {
+            if (student.isBVI()) {
+                toWrite.add(student);
+                // O(n)
+                students.remove(student);
+                i--;
+            }
+        }
+        for (int i = 0; i < students.size(); i++) {
+            Student student = students.get(i);
+            if (student.isQuota()) {
                 toWrite.add(student);
                 // O(n)
                 students.remove(student);

@@ -50,6 +50,14 @@ public class Merger {
                                     logger.severe("Conflict on student: " + student.toString().replace('#', ' '));
                                 }
                             }
+                            if (students.get(student.getName()).getOlympiad().isEmpty()) {
+                                students.get(student.getName()).setOlympiad(student.getOlympiad());
+                            } else {
+                                if (!student.getOlympiad().isEmpty() && students.get(student.getName()).getOlympiad() != student.getOlympiad()) {
+                                    // if we found different comments on one student
+                                    logger.severe("Conflict on student: " + student.toString().replace('#', ' '));
+                                }
+                            }
                         } else {
                             students.put(student.getName(), student);
                         }

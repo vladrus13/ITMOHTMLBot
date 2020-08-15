@@ -29,7 +29,7 @@ public class Student implements Comparable<Student> {
     /**
      * Olympiad
      */
-    private final String olympiad;
+    private String olympiad;
 
     /**
      * Constructor for class
@@ -150,5 +150,13 @@ public class Student implements Comparable<Student> {
     @Override
     public int compareTo(Student o) {
         return o.EGE - this.EGE == 0 ? name.compareTo(o.name) : o.EGE - this.EGE;
+    }
+
+    public String getOlympiad() {
+        return olympiad;
+    }
+
+    public void setOlympiad(String olympiad) {
+        this.olympiad = olympiad;
     }
 }

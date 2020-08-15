@@ -124,6 +124,9 @@ public class Differ {
             studentsToWrite.add(student);
             if (students.containsKey(element.getElementsByTag("td").get(2).html())) {
                 student.setComment(students.get(element.getElementsByTag("td").get(2).html()).getComment());
+                if (student.getOlympiad().isEmpty() && !students.get(student.getName()).getOlympiad().isEmpty()) {
+                    student.setOlympiad(students.get(student.getName()).getOlympiad());
+                }
             }
         }
         Merger.writeToPrevious(previousPath, studentsToWrite, logger);
