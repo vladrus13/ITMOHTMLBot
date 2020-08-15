@@ -25,7 +25,7 @@ public class Student implements Comparable<Student> {
     /**
      * Consent to enrollment
      */
-    private final boolean accept;
+    private boolean accept;
     /**
      * Olympiad
      */
@@ -61,7 +61,20 @@ public class Student implements Comparable<Student> {
                 strings[4].equals("true") || strings[4].equals("Да"),
                 strings[5].equals("true") || strings[5].equals("Да"),
                 strings.length > 6 ? strings[6] : "");
-        comment = accept ? 100 : strings[0].isEmpty() ? -1 : Integer.parseInt(strings[0]);
+        if (accept) {
+            comment = 100;
+            return;
+        }
+        if (strings[0].isEmpty()) {
+            comment = -1;
+            return;
+        }
+        if (strings[0].indexOf('%') == -1) {
+            comment = Integer.parseInt(strings[0]);
+            return;
+        }
+        comment = Integer.parseInt(strings[0].substring(0, strings[0].indexOf('%')));
+        accept = true;
     }
 
     /**
