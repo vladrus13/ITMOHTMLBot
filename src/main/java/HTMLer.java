@@ -67,7 +67,7 @@ public class HTMLer {
         }
         students.sort(Student::compareTo);
         toWrite.addAll(students);
-        try (BufferedWriter bufferedWriter = Files.newBufferedWriter(Paths.get("resources/index.html"))) {
+        try (BufferedWriter bufferedWriter = Files.newBufferedWriter(Paths.get(properties.getProperty("path_to_git")).resolve("index.html"))) {
             bufferedWriter.write("<!DOCTYPE html>\n" +
                     "<html lang=\"en\">\n" +
                     "<head>\n" +
